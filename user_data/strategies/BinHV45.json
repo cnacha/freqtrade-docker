@@ -1,0 +1,29 @@
+{
+  "strategy_name": "BinHV45",
+  "params": {
+    "stoploss": {
+      "stoploss": -0.99
+    },
+    "buy": {
+      "buy_bbdelta": 3,
+      "buy_closedelta": 15,
+      "buy_tail": 28
+    },
+    "sell": {},
+    "protection": {},
+    "roi": {
+      "0": 0.101,
+      "16": 0.07100000000000001,
+      "60": 0.034,
+      "177": 0.01
+    },
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.16,
+      "trailing_stop_positive_offset": 0.246,
+      "trailing_only_offset_is_reached": true
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2021-09-18 03:27:41.368886+00:00"
+}

@@ -1,0 +1,153 @@
+---
+version: '3'
+services:
+  # freqtrade1:
+  #   image: freqtradeorg/freqtrade:stable
+  #   # image: freqtradeorg/freqtrade:develop
+  #   # Use plotting image
+  #   # image: freqtradeorg/freqtrade:develop_plot
+  #   # Build step - only needed when additional dependencies are needed
+  #   # build:
+  #   #   context: .
+  #   #   dockerfile: "./docker/Dockerfile.custom"
+  #   restart: unless-stopped
+  #   container_name: freqtrade1
+  #   volumes:
+  #     - "./user_data:/freqtrade/user_data"
+  #   # Expose api on port 8080 (localhost only)
+  #   # Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
+  #   # before enabling this.
+  #   ports:
+  #      - "0.0.0.0:8081:8080"
+  #   # Default command used when running `docker compose up`
+  #   command: >
+  #     trade
+  #     --logfile /freqtrade/user_data/logs/freqtrade.log
+  #     --db-url sqlite:////freqtrade/user_data/tradesv3-1.sqlite
+  #     --config /freqtrade/user_data/config1.json
+  #     --strategy GodStraQuick
+  # freqtrade2:
+  #   image: freqtradeorg/freqtrade:stable
+  #   # image: freqtradeorg/freqtrade:develop
+  #   # Use plotting image
+  #   # image: freqtradeorg/freqtrade:develop_plot
+  #   # Build step - only needed when additional dependencies are needed
+  #   # build:
+  #   #   context: .
+  #   #   dockerfile: "./docker/Dockerfile.custom"
+  #   restart: unless-stopped
+  #   container_name: freqtrade2
+  #   volumes:
+  #     - "./user_data:/freqtrade/user_data"
+  #   # Expose api on port 8080 (localhost only)
+  #   # Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
+  #   # before enabling this.
+  #   ports:
+  #      - "0.0.0.0:8082:8080"
+  #   # Default command used when running `docker compose up`
+  #   command: >
+  #     trade
+  #     --logfile /freqtrade/user_data/logs/freqtrade.log
+  #     --db-url sqlite:////freqtrade/user_data/tradesv3-2.sqlite
+  #     --config /freqtrade/user_data/config2.json
+  #     --strategy AdxSmas
+  # freqtrade3:
+  #   image: freqtradeorg/freqtrade:stable
+  #   # image: freqtradeorg/freqtrade:develop
+  #   # Use plotting image
+  #   # image: freqtradeorg/freqtrade:develop_plot
+  #   # Build step - only needed when additional dependencies are needed
+  #   # build:
+  #   #   context: .
+  #   #   dockerfile: "./docker/Dockerfile.custom"
+  #   restart: unless-stopped
+  #   container_name: freqtrade3
+  #   volumes:
+  #     - "./user_data:/freqtrade/user_data"
+  #   # Expose api on port 8080 (localhost only)
+  #   # Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
+  #   # before enabling this.
+  #   ports:
+  #      - "0.0.0.0:8083:8080"
+  #   # Default command used when running `docker compose up`
+  #   command: >
+  #     trade
+  #     --logfile /freqtrade/user_data/logs/freqtrade.log
+  #     --db-url sqlite:////freqtrade/user_data/tradesv3-3.sqlite
+  #     --config /freqtrade/user_data/config3.json
+  #     --strategy Supertrend
+  freqtrade4:
+    image: freqtrade-tensorflow
+    # image: freqtradeorg/freqtrade:develop
+    # Use plotting image
+    # image: freqtradeorg/freqtrade:develop_plot
+    # Build step - only needed when additional dependencies are needed
+    build:
+       context: .
+       dockerfile: "./Dockerfile"
+    restart: unless-stopped
+    container_name: freqtrade5
+    volumes:
+      - "./user_data:/freqtrade/user_data"
+    # Expose api on port 8080 (localhost only)
+    # Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
+    # before enabling this.
+    ports:
+       - "0.0.0.0:8084:8080"
+    # Default command used when running `docker compose up`
+    command: >
+      freqtrade trade
+      --logfile /freqtrade/user_data/logs/freqtrade4.log
+      --db-url sqlite:////freqtrade/user_data/trades4.sqlite
+      --config /freqtrade/user_data/config4.json
+      --strategy NNStraBBRSI
+  freqtrade5:
+    image: freqtrade-tensorflow
+    # image: freqtradeorg/freqtrade:develop
+    # Use plotting image
+    # image: freqtradeorg/freqtrade:develop_plot
+    # Build step - only needed when additional dependencies are needed
+    build:
+        context: .
+        dockerfile: "./Dockerfile"
+    restart: unless-stopped
+    container_name: freqtrade4
+    volumes:
+      - "./user_data:/freqtrade/user_data"
+    # Expose api on port 8080 (localhost only)
+    # Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
+    # before enabling this.
+    ports:
+       - "0.0.0.0:8085:8080"
+    # Default command used when running `docker compose up`
+    command: >
+      freqtrade trade
+      --logfile /freqtrade/user_data/logs/freqtrade5.log
+      --db-url sqlite:////freqtrade/user_data/trades5.sqlite
+      --config /freqtrade/user_data/config5.json
+      --strategy GodStraNew
+  # freqtrade5:
+  #     image: freqtradeorg/freqtrade:stable
+  #     # image: freqtradeorg/freqtrade:develop
+  #     # Use plotting image
+  #     # image: freqtradeorg/freqtrade:develop_plot
+  #     # Build step - only needed when additional dependencies are needed
+  #     # build:
+  #     #   context: .
+  #     #   dockerfile: "./docker/Dockerfile.custom"
+  #     restart: unless-stopped
+  #     container_name: freqtrade5
+  #     volumes:
+  #       - "./user_data:/freqtrade/user_data"
+  #     # Expose api on port 8080 (localhost only)
+  #     # Please read the https://www.freqtrade.io/en/latest/rest-api/ documentation
+  #     # before enabling this.
+  #     ports:
+  #        - "0.0.0.0:8085:8080"
+  #     # Default command used when running `docker compose up`
+  #     command: >
+  #       trade
+  #       --logfile /freqtrade/user_data/logs/freqtrade.log
+  #       --db-url sqlite:////freqtrade/user_data/tradesv3-5.sqlite
+  #       --config /freqtrade/user_data/config5.json
+  #       --strategy MACDStrategy_crossed

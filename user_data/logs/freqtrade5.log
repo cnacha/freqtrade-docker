@@ -1,0 +1,824 @@
+2021-11-08 22:45:30,447 - freqtrade.loggers - INFO - Verbosity set to 0
+2021-11-08 22:45:30,451 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2021-11-08 22:45:30,457 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2021-11-08 22:45:30,459 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2021-11-08 22:45:30,460 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/trades5.sqlite"
+2021-11-08 22:45:30,462 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 4 ...
+2021-11-08 22:45:30,895 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2021-11-08 22:45:30,902 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2021-11-08 22:45:30,903 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2021-11-08 22:45:30,920 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2021-11-08 22:45:30,922 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2021-11-08 22:45:30,925 - freqtrade.freqtradesignal - INFO - Starting freqtrade 2021.10
+2021-11-08 22:45:31,006 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy NNStraBBRSI from '/freqtrade/user_data/strategies/NNStraBBRSI.py'...
+2021-11-08 22:45:31,010 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2021-11-08 22:45:31,012 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2021-11-08 22:45:31,015 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2021-11-08 22:45:31,020 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2021-11-08 22:45:31,025 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2021-11-08 22:45:31,028 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2021-11-08 22:45:31,030 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 50.
+2021-11-08 22:45:31,031 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2021-11-08 22:45:31,034 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: True.
+2021-11-08 22:45:31,036 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.015}
+2021-11-08 22:45:31,038 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2021-11-08 22:45:31,040 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.99
+2021-11-08 22:45:31,042 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2021-11-08 22:45:31,044 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.028
+2021-11-08 22:45:31,045 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.109
+2021-11-08 22:45:31,047 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2021-11-08 22:45:31,049 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2021-11-08 22:45:31,051 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2021-11-08 22:45:31,052 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2021-11-08 22:45:31,054 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2021-11-08 22:45:31,057 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2021-11-08 22:45:31,059 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 50
+2021-11-08 22:45:31,061 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2021-11-08 22:45:31,064 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2021-11-08 22:45:31,067 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2021-11-08 22:45:31,069 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2021-11-08 22:45:31,070 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: True
+2021-11-08 22:45:31,072 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2021-11-08 22:45:31,075 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_offset: 0.0
+2021-11-08 22:45:31,077 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2021-11-08 22:45:31,078 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2021-11-08 22:45:31,080 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2021-11-08 22:45:31,087 - freqtrade.exchange.exchange - INFO - Using CCXT 1.59.2
+2021-11-08 22:45:31,089 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-11-08 22:45:31,106 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2021-11-08 22:45:31,124 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2021-11-08 22:45:32,994 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2021-11-08 22:45:33,707 - freqtrade.wallets - INFO - Wallets synced.
+2021-11-08 22:45:33,709 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2021-11-08 22:45:33,940 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2021-11-08 22:45:34,856 - apscheduler.scheduler - INFO - Scheduler started
+2021-11-08 22:45:37,940 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forcesell'], ['forcebuy'], ['trades'], ['delete'], ['performance'], ['stats'], ['daily'], ['count'], ['locks'], ['unlock', 'delete_locks'], ['reload_config', 'reload_conf'], ['show_config', 'show_conf'], ['stopbuy'], ['whitelist'], ['blacklist'], ['logs'], ['edge'], ['help'], ['version']]
+2021-11-08 22:45:37,946 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2021-11-08 22:45:38,481 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2021-11-08 22:45:38,486 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2021-11-08 22:45:38,489 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2021-11-08 22:45:38,493 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - `jwt_secret_key` seems to be default.Others may be able to log into your bot.
+2021-11-08 22:45:38,496 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2021-11-08 22:45:38,510 - uvicorn.error - INFO - Started server process [1]
+2021-11-08 22:45:38,512 - uvicorn.error - INFO - Waiting for application startup.
+2021-11-08 22:45:38,514 - uvicorn.error - INFO - Application startup complete.
+2021-11-08 22:45:38,516 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2021-11-08 22:45:38,531 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2021-11-08 22:45:38,542 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist AgeFilter from '/freqtrade/freqtrade/plugins/pairlist/AgeFilter.py'...
+2021-11-08 22:45:38,551 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist SpreadFilter from '/freqtrade/freqtrade/plugins/pairlist/SpreadFilter.py'...
+2021-11-08 22:45:38,566 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist RangeStabilityFilter from '/freqtrade/freqtrade/plugins/pairlist/rangestabilityfilter.py'...
+2021-11-08 22:45:38,580 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolatilityFilter from '/freqtrade/freqtrade/plugins/pairlist/VolatilityFilter.py'...
+2021-11-08 22:45:38,893 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BCC/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,897 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring VEN/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,901 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring PAX/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,905 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BSV/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,907 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDS/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,909 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDSB/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,912 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ERD/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,914 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring NPXS/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,916 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STORM/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,918 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring HC/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,920 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring MCO/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,921 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BULL/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,922 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,925 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,926 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,928 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,929 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,932 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,933 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,935 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STRAT/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,937 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,939 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,940 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XZC/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,942 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring LEND/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,944 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BKRW/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,946 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring DAI/USDT from whitelist. Market is not active.
+2021-11-08 22:45:38,949 - VolumePairList - INFO - Pair SHIB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:45:38,951 - VolumePairList - INFO - Searching 30 pairs: ['BTC/USDT', 'ETH/USDT', 'BUSD/USDT', 'DOGE/USDT', 'LRC/USDT', 'BNB/USDT', 'XRP/USDT', 'AVAX/USDT', 'SOL/USDT', 'TRX/USDT', 'DOT/USDT', 'ADA/USDT', 'FTM/USDT', 'OMG/USDT', 'LTC/USDT', 'SAND/USDT', 'VET/USDT', 'ICP/USDT', 'AXS/USDT', 'MANA/USDT', 'LINK/USDT', 'FIL/USDT', 'USDC/USDT', 'MATIC/USDT', 'LUNA/USDT', 'UMA/USDT', 'BAT/USDT', 'POND/USDT', 'SLP/USDT', 'DYDX/USDT']
+2021-11-08 22:45:47,320 - AgeFilter - INFO - Validated 30 pairs.
+2021-11-08 22:45:57,552 - freqtrade.loggers - INFO - Verbosity set to 0
+2021-11-08 22:45:57,554 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2021-11-08 22:45:57,557 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2021-11-08 22:45:57,559 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2021-11-08 22:45:57,562 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/trades5.sqlite"
+2021-11-08 22:45:57,565 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 4 ...
+2021-11-08 22:45:57,814 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2021-11-08 22:45:57,816 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2021-11-08 22:45:57,817 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2021-11-08 22:45:57,830 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2021-11-08 22:45:57,832 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2021-11-08 22:45:57,834 - freqtrade.freqtradesignal - INFO - Starting freqtrade 2021.10
+2021-11-08 22:45:57,914 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy NNStraBBRSI from '/freqtrade/user_data/strategies/NNStraBBRSI.py'...
+2021-11-08 22:45:57,919 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2021-11-08 22:45:57,921 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2021-11-08 22:45:57,924 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2021-11-08 22:45:57,926 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2021-11-08 22:45:57,929 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2021-11-08 22:45:57,931 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2021-11-08 22:45:57,933 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 50.
+2021-11-08 22:45:57,935 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2021-11-08 22:45:57,937 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: True.
+2021-11-08 22:45:57,939 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.015}
+2021-11-08 22:45:57,940 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2021-11-08 22:45:57,942 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.99
+2021-11-08 22:45:57,943 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2021-11-08 22:45:57,945 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.028
+2021-11-08 22:45:57,947 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.109
+2021-11-08 22:45:57,949 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2021-11-08 22:45:57,951 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2021-11-08 22:45:57,953 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2021-11-08 22:45:57,955 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2021-11-08 22:45:57,958 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2021-11-08 22:45:57,960 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2021-11-08 22:45:57,962 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 50
+2021-11-08 22:45:57,963 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2021-11-08 22:45:57,965 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2021-11-08 22:45:57,967 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2021-11-08 22:45:57,969 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2021-11-08 22:45:57,973 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: True
+2021-11-08 22:45:57,975 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2021-11-08 22:45:57,977 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_offset: 0.0
+2021-11-08 22:45:57,979 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2021-11-08 22:45:57,984 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2021-11-08 22:45:57,986 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2021-11-08 22:45:57,992 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2021-11-08 22:45:57,994 - freqtrade.exchange.exchange - INFO - Using CCXT 1.59.2
+2021-11-08 22:45:57,996 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-11-08 22:45:58,008 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2021-11-08 22:45:58,028 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2021-11-08 22:45:59,149 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2021-11-08 22:45:59,268 - freqtrade.wallets - INFO - Wallets synced.
+2021-11-08 22:45:59,270 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2021-11-08 22:45:59,508 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2021-11-08 22:46:00,305 - apscheduler.scheduler - INFO - Scheduler started
+2021-11-08 22:46:01,206 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forcesell'], ['forcebuy'], ['trades'], ['delete'], ['performance'], ['stats'], ['daily'], ['count'], ['locks'], ['unlock', 'delete_locks'], ['reload_config', 'reload_conf'], ['show_config', 'show_conf'], ['stopbuy'], ['whitelist'], ['blacklist'], ['logs'], ['edge'], ['help'], ['version']]
+2021-11-08 22:46:01,214 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2021-11-08 22:46:01,612 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2021-11-08 22:46:01,614 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2021-11-08 22:46:01,616 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2021-11-08 22:46:01,617 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - `jwt_secret_key` seems to be default.Others may be able to log into your bot.
+2021-11-08 22:46:01,619 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2021-11-08 22:46:01,635 - uvicorn.error - INFO - Started server process [1]
+2021-11-08 22:46:01,636 - uvicorn.error - INFO - Waiting for application startup.
+2021-11-08 22:46:01,639 - uvicorn.error - INFO - Application startup complete.
+2021-11-08 22:46:01,642 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2021-11-08 22:46:01,657 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2021-11-08 22:46:01,671 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist AgeFilter from '/freqtrade/freqtrade/plugins/pairlist/AgeFilter.py'...
+2021-11-08 22:46:01,678 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist SpreadFilter from '/freqtrade/freqtrade/plugins/pairlist/SpreadFilter.py'...
+2021-11-08 22:46:01,690 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist RangeStabilityFilter from '/freqtrade/freqtrade/plugins/pairlist/rangestabilityfilter.py'...
+2021-11-08 22:46:01,709 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolatilityFilter from '/freqtrade/freqtrade/plugins/pairlist/VolatilityFilter.py'...
+2021-11-08 22:46:02,098 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BCC/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,103 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring VEN/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,109 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring PAX/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,111 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BSV/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,114 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDS/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,116 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDSB/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,118 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ERD/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,120 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring NPXS/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,122 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STORM/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,124 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring HC/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,126 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring MCO/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,128 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BULL/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,129 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,131 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,134 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,136 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,139 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,140 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,142 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,144 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STRAT/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,146 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,147 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,149 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XZC/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,151 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring LEND/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,153 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BKRW/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,154 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring DAI/USDT from whitelist. Market is not active.
+2021-11-08 22:46:02,164 - VolumePairList - INFO - Pair SHIB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:46:02,200 - VolumePairList - INFO - Searching 30 pairs: ['BTC/USDT', 'ETH/USDT', 'BUSD/USDT', 'DOGE/USDT', 'LRC/USDT', 'BNB/USDT', 'XRP/USDT', 'AVAX/USDT', 'SOL/USDT', 'TRX/USDT', 'DOT/USDT', 'ADA/USDT', 'FTM/USDT', 'OMG/USDT', 'LTC/USDT', 'SAND/USDT', 'VET/USDT', 'ICP/USDT', 'AXS/USDT', 'MANA/USDT', 'LINK/USDT', 'FIL/USDT', 'USDC/USDT', 'MATIC/USDT', 'LUNA/USDT', 'UMA/USDT', 'BAT/USDT', 'POND/USDT', 'SLP/USDT', 'DYDX/USDT']
+2021-11-08 22:46:10,540 - AgeFilter - INFO - Validated 30 pairs.
+2021-11-08 22:46:17,071 - RangeStabilityFilter - INFO - Removed BTC/USDT from whitelist, because rate of change over 3 days is 0.054, which is below the threshold of 0.1.
+2021-11-08 22:46:17,076 - RangeStabilityFilter - INFO - Removed ETH/USDT from whitelist, because rate of change over 3 days is 0.072, which is below the threshold of 0.1.
+2021-11-08 22:46:17,087 - RangeStabilityFilter - INFO - Removed BUSD/USDT from whitelist, because rate of change over 3 days is 0.001, which is below the threshold of 0.1.
+2021-11-08 22:46:17,098 - RangeStabilityFilter - INFO - Removed DOGE/USDT from whitelist, because rate of change over 3 days is 0.084, which is below the threshold of 0.1.
+2021-11-08 22:46:17,104 - RangeStabilityFilter - INFO - Removed TRX/USDT from whitelist, because rate of change over 3 days is 0.078, which is below the threshold of 0.1.
+2021-11-08 22:46:17,113 - RangeStabilityFilter - INFO - Removed ADA/USDT from whitelist, because rate of change over 3 days is 0.088, which is below the threshold of 0.1.
+2021-11-08 22:46:17,119 - RangeStabilityFilter - INFO - Removed LTC/USDT from whitelist, because rate of change over 3 days is 0.085, which is below the threshold of 0.1.
+2021-11-08 22:46:17,130 - RangeStabilityFilter - INFO - Removed USDC/USDT from whitelist, because rate of change over 3 days is 0.001, which is below the threshold of 0.1.
+2021-11-08 22:46:17,142 - RangeStabilityFilter - INFO - Removed POND/USDT from whitelist, because rate of change over 3 days is 0.088, which is below the threshold of 0.1.
+2021-11-08 22:46:21,748 - VolatilityFilter - INFO - Removed LRC/USDT from whitelist, because volatility over 10 days is: 0.610 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,756 - VolatilityFilter - INFO - Removed BNB/USDT from whitelist, because volatility over 10 days is: 0.106 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,764 - VolatilityFilter - INFO - Removed XRP/USDT from whitelist, because volatility over 10 days is: 0.105 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,770 - VolatilityFilter - INFO - Removed AVAX/USDT from whitelist, because volatility over 10 days is: 0.176 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,775 - VolatilityFilter - INFO - Removed SOL/USDT from whitelist, because volatility over 10 days is: 0.164 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,780 - VolatilityFilter - INFO - Removed DOT/USDT from whitelist, because volatility over 10 days is: 0.173 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,787 - VolatilityFilter - INFO - Removed FTM/USDT from whitelist, because volatility over 10 days is: 0.154 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,792 - VolatilityFilter - INFO - Removed SAND/USDT from whitelist, because volatility over 10 days is: 0.670 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,797 - VolatilityFilter - INFO - Removed VET/USDT from whitelist, because volatility over 10 days is: 0.142 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,808 - VolatilityFilter - INFO - Removed ICP/USDT from whitelist, because volatility over 10 days is: 0.126 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,813 - VolatilityFilter - INFO - Removed AXS/USDT from whitelist, because volatility over 10 days is: 0.120 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,817 - VolatilityFilter - INFO - Removed MANA/USDT from whitelist, because volatility over 10 days is: 1.039 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,826 - VolatilityFilter - INFO - Removed LINK/USDT from whitelist, because volatility over 10 days is: 0.105 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,832 - VolatilityFilter - INFO - Removed FIL/USDT from whitelist, because volatility over 10 days is: 0.073 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,836 - VolatilityFilter - INFO - Removed MATIC/USDT from whitelist, because volatility over 10 days is: 0.130 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,843 - VolatilityFilter - INFO - Removed LUNA/USDT from whitelist, because volatility over 10 days is: 0.139 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,854 - VolatilityFilter - INFO - Removed DYDX/USDT from whitelist, because volatility over 10 days is: 0.173 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:46:21,860 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2021-11-08 22:46:22,948 - freqtrade.worker - INFO - Changing state to: RUNNING
+2021-11-08 22:46:22,954 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2021-11-08 22:46:23,356 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `50 USDT`\n*Minimum ROI:* `{'0': 0.015}`\n*Stoploss:* `-0.99`\n*Timeframe:* `5m`\n*Strategy:* `NNStraBBRSI`"}
+2021-11-08 22:46:23,762 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 30 volume pairs.'}, {'AgeFilter': 'AgeFilter - Filtering pairs with age less than 14 days'}, {'SpreadFilter': 'SpreadFilter - Filtering pairs with ask/bid diff above 0.5%.'}, {'RangeStabilityFilter': 'RangeStabilityFilter - Filtering pairs with rate of change below 0.1 over the last days.'}, {'VolatilityFilter': 'VolatilityFilter - Filtering pairs with volatility range 0.25-0.5  the last 10 days.'}]"}
+2021-11-08 22:46:36,886 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:46:36,947 - freqtrade.commands.trade_commands - ERROR - 'bots_to_signal'
+2021-11-08 22:46:36,954 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 19, in start_trading
+    worker.run()
+  File "/freqtrade/freqtrade/worker.py", line 75, in run
+    state = self._worker(old_state=state)
+  File "/freqtrade/freqtrade/worker.py", line 112, in _worker
+    self._throttle(func=self._process_running, throttle_secs=self._throttle_secs)
+  File "/freqtrade/freqtrade/worker.py", line 133, in _throttle
+    result = func(*args, **kwargs)
+  File "/freqtrade/freqtrade/worker.py", line 146, in _process_running
+    self.freqtrade.process()
+  File "/freqtrade/freqtrade/freqtradesignal.py", line 167, in process
+    self.send_signal()
+  File "/freqtrade/freqtrade/freqtradesignal.py", line 203, in send_signal
+    for botconfig in  self.config['bots_to_signal']:
+KeyError: 'bots_to_signal'
+2021-11-08 22:46:37,008 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2021-11-08 22:46:37,016 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2021-11-08 22:46:37,406 - freqtrade.freqtradesignal - INFO - Cleaning up modules ...
+2021-11-08 22:46:37,438 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2021-11-08 22:46:37,441 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2021-11-08 22:46:37,444 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2021-11-08 22:46:37,485 - uvicorn.error - INFO - Shutting down
+2021-11-08 22:46:37,595 - uvicorn.error - INFO - Waiting for application shutdown.
+2021-11-08 22:46:37,600 - uvicorn.error - INFO - Application shutdown complete.
+2021-11-08 22:46:37,604 - uvicorn.error - INFO - Finished server process [1]
+2021-11-08 22:46:37,610 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.telegram ...
+2021-11-08 22:46:37,631 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2021-11-08 22:47:16,018 - freqtrade.loggers - INFO - Verbosity set to 0
+2021-11-08 22:47:16,021 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2021-11-08 22:47:16,026 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2021-11-08 22:47:16,029 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2021-11-08 22:47:16,031 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/trades5.sqlite"
+2021-11-08 22:47:16,035 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 4 ...
+2021-11-08 22:47:16,567 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2021-11-08 22:47:16,569 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2021-11-08 22:47:16,571 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2021-11-08 22:47:16,590 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2021-11-08 22:47:16,591 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2021-11-08 22:47:16,594 - freqtrade.freqtradesignal - INFO - Starting freqtrade 2021.10
+2021-11-08 22:47:16,707 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy NNStraBBRSI from '/freqtrade/user_data/strategies/NNStraBBRSI.py'...
+2021-11-08 22:47:16,711 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2021-11-08 22:47:16,713 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2021-11-08 22:47:16,717 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2021-11-08 22:47:16,719 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2021-11-08 22:47:16,722 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2021-11-08 22:47:16,724 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2021-11-08 22:47:16,726 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 50.
+2021-11-08 22:47:16,728 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2021-11-08 22:47:16,729 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: True.
+2021-11-08 22:47:16,732 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.015}
+2021-11-08 22:47:16,734 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2021-11-08 22:47:16,736 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.99
+2021-11-08 22:47:16,738 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2021-11-08 22:47:16,741 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.028
+2021-11-08 22:47:16,743 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.109
+2021-11-08 22:47:16,746 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2021-11-08 22:47:16,746 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2021-11-08 22:47:16,749 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2021-11-08 22:47:16,752 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2021-11-08 22:47:16,753 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2021-11-08 22:47:16,755 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2021-11-08 22:47:16,756 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 50
+2021-11-08 22:47:16,757 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2021-11-08 22:47:16,759 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2021-11-08 22:47:16,763 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2021-11-08 22:47:16,768 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2021-11-08 22:47:16,770 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: True
+2021-11-08 22:47:16,773 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2021-11-08 22:47:16,775 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_offset: 0.0
+2021-11-08 22:47:16,777 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2021-11-08 22:47:16,779 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2021-11-08 22:47:16,781 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2021-11-08 22:47:16,805 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2021-11-08 22:47:16,807 - freqtrade.exchange.exchange - INFO - Using CCXT 1.59.2
+2021-11-08 22:47:16,814 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-11-08 22:47:16,829 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2021-11-08 22:47:16,842 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2021-11-08 22:47:17,962 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2021-11-08 22:47:18,185 - freqtrade.wallets - INFO - Wallets synced.
+2021-11-08 22:47:18,188 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2021-11-08 22:47:18,451 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2021-11-08 22:47:20,353 - apscheduler.scheduler - INFO - Scheduler started
+2021-11-08 22:47:21,273 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forcesell'], ['forcebuy'], ['trades'], ['delete'], ['performance'], ['stats'], ['daily'], ['count'], ['locks'], ['unlock', 'delete_locks'], ['reload_config', 'reload_conf'], ['show_config', 'show_conf'], ['stopbuy'], ['whitelist'], ['blacklist'], ['logs'], ['edge'], ['help'], ['version']]
+2021-11-08 22:47:21,278 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2021-11-08 22:47:22,006 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2021-11-08 22:47:22,009 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2021-11-08 22:47:22,011 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2021-11-08 22:47:22,015 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - `jwt_secret_key` seems to be default.Others may be able to log into your bot.
+2021-11-08 22:47:22,018 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2021-11-08 22:47:22,174 - uvicorn.error - INFO - Started server process [1]
+2021-11-08 22:47:22,177 - uvicorn.error - INFO - Waiting for application startup.
+2021-11-08 22:47:22,181 - uvicorn.error - INFO - Application startup complete.
+2021-11-08 22:47:22,186 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2021-11-08 22:47:22,265 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2021-11-08 22:47:22,279 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist AgeFilter from '/freqtrade/freqtrade/plugins/pairlist/AgeFilter.py'...
+2021-11-08 22:47:22,287 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist SpreadFilter from '/freqtrade/freqtrade/plugins/pairlist/SpreadFilter.py'...
+2021-11-08 22:47:22,303 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist RangeStabilityFilter from '/freqtrade/freqtrade/plugins/pairlist/rangestabilityfilter.py'...
+2021-11-08 22:47:22,320 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolatilityFilter from '/freqtrade/freqtrade/plugins/pairlist/VolatilityFilter.py'...
+2021-11-08 22:47:22,606 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BCC/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,610 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring VEN/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,613 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring PAX/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,616 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BSV/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,619 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDS/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,623 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDSB/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,625 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ERD/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,627 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring NPXS/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,630 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STORM/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,632 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring HC/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,635 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring MCO/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,638 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BULL/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,640 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,643 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,647 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,649 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,651 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,655 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,658 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,661 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STRAT/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,663 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,665 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,668 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XZC/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,670 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring LEND/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,672 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BKRW/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,676 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring DAI/USDT from whitelist. Market is not active.
+2021-11-08 22:47:22,681 - VolumePairList - INFO - Pair SHIB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:47:22,687 - VolumePairList - INFO - Searching 30 pairs: ['BTC/USDT', 'ETH/USDT', 'BUSD/USDT', 'DOGE/USDT', 'LRC/USDT', 'BNB/USDT', 'XRP/USDT', 'AVAX/USDT', 'SOL/USDT', 'TRX/USDT', 'DOT/USDT', 'ADA/USDT', 'FTM/USDT', 'OMG/USDT', 'LTC/USDT', 'SAND/USDT', 'VET/USDT', 'ICP/USDT', 'AXS/USDT', 'MANA/USDT', 'LINK/USDT', 'FIL/USDT', 'USDC/USDT', 'MATIC/USDT', 'LUNA/USDT', 'UMA/USDT', 'BAT/USDT', 'POND/USDT', 'SLP/USDT', 'DYDX/USDT']
+2021-11-08 22:47:31,218 - AgeFilter - INFO - Validated 30 pairs.
+2021-11-08 22:47:37,879 - RangeStabilityFilter - INFO - Removed BTC/USDT from whitelist, because rate of change over 3 days is 0.054, which is below the threshold of 0.1.
+2021-11-08 22:47:37,888 - RangeStabilityFilter - INFO - Removed ETH/USDT from whitelist, because rate of change over 3 days is 0.072, which is below the threshold of 0.1.
+2021-11-08 22:47:37,893 - RangeStabilityFilter - INFO - Removed BUSD/USDT from whitelist, because rate of change over 3 days is 0.001, which is below the threshold of 0.1.
+2021-11-08 22:47:37,899 - RangeStabilityFilter - INFO - Removed DOGE/USDT from whitelist, because rate of change over 3 days is 0.084, which is below the threshold of 0.1.
+2021-11-08 22:47:37,905 - RangeStabilityFilter - INFO - Removed TRX/USDT from whitelist, because rate of change over 3 days is 0.078, which is below the threshold of 0.1.
+2021-11-08 22:47:37,910 - RangeStabilityFilter - INFO - Removed ADA/USDT from whitelist, because rate of change over 3 days is 0.088, which is below the threshold of 0.1.
+2021-11-08 22:47:37,915 - RangeStabilityFilter - INFO - Removed LTC/USDT from whitelist, because rate of change over 3 days is 0.085, which is below the threshold of 0.1.
+2021-11-08 22:47:37,921 - RangeStabilityFilter - INFO - Removed USDC/USDT from whitelist, because rate of change over 3 days is 0.001, which is below the threshold of 0.1.
+2021-11-08 22:47:37,926 - RangeStabilityFilter - INFO - Removed POND/USDT from whitelist, because rate of change over 3 days is 0.088, which is below the threshold of 0.1.
+2021-11-08 22:47:42,542 - VolatilityFilter - INFO - Removed LRC/USDT from whitelist, because volatility over 10 days is: 0.610 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,554 - VolatilityFilter - INFO - Removed BNB/USDT from whitelist, because volatility over 10 days is: 0.106 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,559 - VolatilityFilter - INFO - Removed XRP/USDT from whitelist, because volatility over 10 days is: 0.105 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,563 - VolatilityFilter - INFO - Removed AVAX/USDT from whitelist, because volatility over 10 days is: 0.176 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,568 - VolatilityFilter - INFO - Removed SOL/USDT from whitelist, because volatility over 10 days is: 0.164 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,573 - VolatilityFilter - INFO - Removed DOT/USDT from whitelist, because volatility over 10 days is: 0.173 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,577 - VolatilityFilter - INFO - Removed FTM/USDT from whitelist, because volatility over 10 days is: 0.154 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,581 - VolatilityFilter - INFO - Removed SAND/USDT from whitelist, because volatility over 10 days is: 0.670 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,584 - VolatilityFilter - INFO - Removed VET/USDT from whitelist, because volatility over 10 days is: 0.142 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,589 - VolatilityFilter - INFO - Removed ICP/USDT from whitelist, because volatility over 10 days is: 0.126 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,596 - VolatilityFilter - INFO - Removed AXS/USDT from whitelist, because volatility over 10 days is: 0.120 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,600 - VolatilityFilter - INFO - Removed MANA/USDT from whitelist, because volatility over 10 days is: 1.039 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,603 - VolatilityFilter - INFO - Removed LINK/USDT from whitelist, because volatility over 10 days is: 0.105 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,607 - VolatilityFilter - INFO - Removed FIL/USDT from whitelist, because volatility over 10 days is: 0.073 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,611 - VolatilityFilter - INFO - Removed MATIC/USDT from whitelist, because volatility over 10 days is: 0.130 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,615 - VolatilityFilter - INFO - Removed LUNA/USDT from whitelist, because volatility over 10 days is: 0.139 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,622 - VolatilityFilter - INFO - Removed DYDX/USDT from whitelist, because volatility over 10 days is: 0.173 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:47:42,627 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2021-11-08 22:47:43,497 - freqtrade.worker - INFO - Changing state to: RUNNING
+2021-11-08 22:47:43,503 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2021-11-08 22:47:43,911 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `50 USDT`\n*Minimum ROI:* `{'0': 0.015}`\n*Stoploss:* `-0.99`\n*Timeframe:* `5m`\n*Strategy:* `NNStraBBRSI`"}
+2021-11-08 22:47:44,313 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 30 volume pairs.'}, {'AgeFilter': 'AgeFilter - Filtering pairs with age less than 14 days'}, {'SpreadFilter': 'SpreadFilter - Filtering pairs with ask/bid diff above 0.5%.'}, {'RangeStabilityFilter': 'RangeStabilityFilter - Filtering pairs with rate of change below 0.1 over the last days.'}, {'VolatilityFilter': 'VolatilityFilter - Filtering pairs with volatility range 0.25-0.5  the last 10 days.'}]"}
+2021-11-08 22:47:51,379 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:47:51,401 - freqtrade.commands.trade_commands - ERROR - 'bots_to_signal'
+2021-11-08 22:47:51,404 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 19, in start_trading
+    worker.run()
+  File "/freqtrade/freqtrade/worker.py", line 75, in run
+    state = self._worker(old_state=state)
+  File "/freqtrade/freqtrade/worker.py", line 112, in _worker
+    self._throttle(func=self._process_running, throttle_secs=self._throttle_secs)
+  File "/freqtrade/freqtrade/worker.py", line 133, in _throttle
+    result = func(*args, **kwargs)
+  File "/freqtrade/freqtrade/worker.py", line 146, in _process_running
+    self.freqtrade.process()
+  File "/freqtrade/freqtrade/freqtradesignal.py", line 167, in process
+    self.send_signal()
+  File "/freqtrade/freqtrade/freqtradesignal.py", line 203, in send_signal
+    for botconfig in  self.config['bots_to_signal']:
+KeyError: 'bots_to_signal'
+2021-11-08 22:47:51,409 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2021-11-08 22:47:51,413 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2021-11-08 22:47:51,808 - freqtrade.freqtradesignal - INFO - Cleaning up modules ...
+2021-11-08 22:47:51,821 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2021-11-08 22:47:51,823 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2021-11-08 22:47:51,828 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2021-11-08 22:47:51,883 - uvicorn.error - INFO - Shutting down
+2021-11-08 22:47:51,991 - uvicorn.error - INFO - Waiting for application shutdown.
+2021-11-08 22:47:51,998 - uvicorn.error - INFO - Application shutdown complete.
+2021-11-08 22:47:52,005 - uvicorn.error - INFO - Finished server process [1]
+2021-11-08 22:47:52,008 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.telegram ...
+2021-11-08 22:47:52,012 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2021-11-08 22:48:29,703 - freqtrade.loggers - INFO - Verbosity set to 0
+2021-11-08 22:48:29,706 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2021-11-08 22:48:29,709 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2021-11-08 22:48:29,713 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2021-11-08 22:48:29,717 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/trades5.sqlite"
+2021-11-08 22:48:29,720 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 4 ...
+2021-11-08 22:48:29,973 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2021-11-08 22:48:29,979 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2021-11-08 22:48:29,983 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2021-11-08 22:48:30,004 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2021-11-08 22:48:30,007 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2021-11-08 22:48:30,009 - freqtrade.freqtradesignal - INFO - Starting freqtrade 2021.10
+2021-11-08 22:48:30,076 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy NNStraBBRSI from '/freqtrade/user_data/strategies/NNStraBBRSI.py'...
+2021-11-08 22:48:30,080 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2021-11-08 22:48:30,083 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2021-11-08 22:48:30,093 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2021-11-08 22:48:30,095 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2021-11-08 22:48:30,099 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2021-11-08 22:48:30,104 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2021-11-08 22:48:30,108 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 50.
+2021-11-08 22:48:30,111 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2021-11-08 22:48:30,113 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: True.
+2021-11-08 22:48:30,114 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.015}
+2021-11-08 22:48:30,116 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2021-11-08 22:48:30,117 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.99
+2021-11-08 22:48:30,119 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2021-11-08 22:48:30,120 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.028
+2021-11-08 22:48:30,121 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.109
+2021-11-08 22:48:30,123 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2021-11-08 22:48:30,125 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2021-11-08 22:48:30,127 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2021-11-08 22:48:30,129 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2021-11-08 22:48:30,130 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2021-11-08 22:48:30,132 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2021-11-08 22:48:30,134 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 50
+2021-11-08 22:48:30,136 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2021-11-08 22:48:30,137 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2021-11-08 22:48:30,139 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2021-11-08 22:48:30,141 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2021-11-08 22:48:30,143 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: True
+2021-11-08 22:48:30,144 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2021-11-08 22:48:30,148 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_offset: 0.0
+2021-11-08 22:48:30,150 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2021-11-08 22:48:30,152 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2021-11-08 22:48:30,154 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2021-11-08 22:48:30,160 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2021-11-08 22:48:30,166 - freqtrade.exchange.exchange - INFO - Using CCXT 1.59.2
+2021-11-08 22:48:30,168 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-11-08 22:48:30,179 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2021-11-08 22:48:30,194 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2021-11-08 22:48:31,501 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2021-11-08 22:48:31,615 - freqtrade.wallets - INFO - Wallets synced.
+2021-11-08 22:48:31,618 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2021-11-08 22:48:31,843 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2021-11-08 22:48:33,436 - apscheduler.scheduler - INFO - Scheduler started
+2021-11-08 22:48:34,346 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forcesell'], ['forcebuy'], ['trades'], ['delete'], ['performance'], ['stats'], ['daily'], ['count'], ['locks'], ['unlock', 'delete_locks'], ['reload_config', 'reload_conf'], ['show_config', 'show_conf'], ['stopbuy'], ['whitelist'], ['blacklist'], ['logs'], ['edge'], ['help'], ['version']]
+2021-11-08 22:48:34,354 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2021-11-08 22:48:34,785 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2021-11-08 22:48:34,789 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2021-11-08 22:48:34,793 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2021-11-08 22:48:34,797 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - `jwt_secret_key` seems to be default.Others may be able to log into your bot.
+2021-11-08 22:48:34,800 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2021-11-08 22:48:34,815 - uvicorn.error - INFO - Started server process [1]
+2021-11-08 22:48:34,819 - uvicorn.error - INFO - Waiting for application startup.
+2021-11-08 22:48:34,821 - uvicorn.error - INFO - Application startup complete.
+2021-11-08 22:48:34,825 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2021-11-08 22:48:34,843 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2021-11-08 22:48:34,855 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist AgeFilter from '/freqtrade/freqtrade/plugins/pairlist/AgeFilter.py'...
+2021-11-08 22:48:34,860 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist SpreadFilter from '/freqtrade/freqtrade/plugins/pairlist/SpreadFilter.py'...
+2021-11-08 22:48:34,874 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist RangeStabilityFilter from '/freqtrade/freqtrade/plugins/pairlist/rangestabilityfilter.py'...
+2021-11-08 22:48:34,886 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolatilityFilter from '/freqtrade/freqtrade/plugins/pairlist/VolatilityFilter.py'...
+2021-11-08 22:48:35,797 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BCC/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,801 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring VEN/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,810 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring PAX/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,813 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BSV/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,815 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDS/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,825 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDSB/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,827 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ERD/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,828 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring NPXS/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,829 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STORM/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,833 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring HC/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,835 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring MCO/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,840 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BULL/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,842 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,845 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,849 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,850 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,852 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,854 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,855 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,857 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STRAT/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,858 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,860 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,861 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XZC/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,865 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring LEND/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,868 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BKRW/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,870 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring DAI/USDT from whitelist. Market is not active.
+2021-11-08 22:48:35,874 - VolumePairList - INFO - Pair SHIB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:48:35,876 - VolumePairList - INFO - Searching 30 pairs: ['BTC/USDT', 'ETH/USDT', 'BUSD/USDT', 'DOGE/USDT', 'LRC/USDT', 'BNB/USDT', 'XRP/USDT', 'AVAX/USDT', 'SOL/USDT', 'TRX/USDT', 'DOT/USDT', 'ADA/USDT', 'FTM/USDT', 'OMG/USDT', 'LTC/USDT', 'SAND/USDT', 'VET/USDT', 'ICP/USDT', 'AXS/USDT', 'MANA/USDT', 'LINK/USDT', 'FIL/USDT', 'USDC/USDT', 'MATIC/USDT', 'LUNA/USDT', 'UMA/USDT', 'BAT/USDT', 'POND/USDT', 'SLP/USDT', 'DYDX/USDT']
+2021-11-08 22:48:44,234 - AgeFilter - INFO - Validated 30 pairs.
+2021-11-08 22:48:50,776 - RangeStabilityFilter - INFO - Removed BTC/USDT from whitelist, because rate of change over 3 days is 0.054, which is below the threshold of 0.1.
+2021-11-08 22:48:50,793 - RangeStabilityFilter - INFO - Removed ETH/USDT from whitelist, because rate of change over 3 days is 0.072, which is below the threshold of 0.1.
+2021-11-08 22:48:50,801 - RangeStabilityFilter - INFO - Removed BUSD/USDT from whitelist, because rate of change over 3 days is 0.001, which is below the threshold of 0.1.
+2021-11-08 22:48:50,814 - RangeStabilityFilter - INFO - Removed DOGE/USDT from whitelist, because rate of change over 3 days is 0.084, which is below the threshold of 0.1.
+2021-11-08 22:48:50,876 - RangeStabilityFilter - INFO - Removed TRX/USDT from whitelist, because rate of change over 3 days is 0.078, which is below the threshold of 0.1.
+2021-11-08 22:48:50,896 - RangeStabilityFilter - INFO - Removed ADA/USDT from whitelist, because rate of change over 3 days is 0.088, which is below the threshold of 0.1.
+2021-11-08 22:48:50,900 - RangeStabilityFilter - INFO - Removed LTC/USDT from whitelist, because rate of change over 3 days is 0.085, which is below the threshold of 0.1.
+2021-11-08 22:48:50,907 - RangeStabilityFilter - INFO - Removed USDC/USDT from whitelist, because rate of change over 3 days is 0.001, which is below the threshold of 0.1.
+2021-11-08 22:48:50,918 - RangeStabilityFilter - INFO - Removed POND/USDT from whitelist, because rate of change over 3 days is 0.088, which is below the threshold of 0.1.
+2021-11-08 22:48:55,707 - VolatilityFilter - INFO - Removed LRC/USDT from whitelist, because volatility over 10 days is: 0.610 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,723 - VolatilityFilter - INFO - Removed BNB/USDT from whitelist, because volatility over 10 days is: 0.106 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,738 - VolatilityFilter - INFO - Removed XRP/USDT from whitelist, because volatility over 10 days is: 0.105 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,743 - VolatilityFilter - INFO - Removed AVAX/USDT from whitelist, because volatility over 10 days is: 0.176 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,749 - VolatilityFilter - INFO - Removed SOL/USDT from whitelist, because volatility over 10 days is: 0.164 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,756 - VolatilityFilter - INFO - Removed DOT/USDT from whitelist, because volatility over 10 days is: 0.173 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,763 - VolatilityFilter - INFO - Removed FTM/USDT from whitelist, because volatility over 10 days is: 0.154 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,770 - VolatilityFilter - INFO - Removed SAND/USDT from whitelist, because volatility over 10 days is: 0.670 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,780 - VolatilityFilter - INFO - Removed VET/USDT from whitelist, because volatility over 10 days is: 0.142 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,786 - VolatilityFilter - INFO - Removed ICP/USDT from whitelist, because volatility over 10 days is: 0.126 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,792 - VolatilityFilter - INFO - Removed AXS/USDT from whitelist, because volatility over 10 days is: 0.120 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,800 - VolatilityFilter - INFO - Removed MANA/USDT from whitelist, because volatility over 10 days is: 1.039 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,805 - VolatilityFilter - INFO - Removed LINK/USDT from whitelist, because volatility over 10 days is: 0.105 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,812 - VolatilityFilter - INFO - Removed FIL/USDT from whitelist, because volatility over 10 days is: 0.073 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,822 - VolatilityFilter - INFO - Removed MATIC/USDT from whitelist, because volatility over 10 days is: 0.130 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,825 - VolatilityFilter - INFO - Removed LUNA/USDT from whitelist, because volatility over 10 days is: 0.139 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,835 - VolatilityFilter - INFO - Removed DYDX/USDT from whitelist, because volatility over 10 days is: 0.173 which is not in the configured range of 0.25-0.5.
+2021-11-08 22:48:55,843 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2021-11-08 22:48:56,707 - freqtrade.worker - INFO - Changing state to: RUNNING
+2021-11-08 22:48:56,713 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2021-11-08 22:48:57,108 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `50 USDT`\n*Minimum ROI:* `{'0': 0.015}`\n*Stoploss:* `-0.99`\n*Timeframe:* `5m`\n*Strategy:* `NNStraBBRSI`"}
+2021-11-08 22:48:57,511 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 30 volume pairs.'}, {'AgeFilter': 'AgeFilter - Filtering pairs with age less than 14 days'}, {'SpreadFilter': 'SpreadFilter - Filtering pairs with ask/bid diff above 0.5%.'}, {'RangeStabilityFilter': 'RangeStabilityFilter - Filtering pairs with rate of change below 0.1 over the last days.'}, {'VolatilityFilter': 'VolatilityFilter - Filtering pairs with volatility range 0.25-0.5  the last 10 days.'}]"}
+2021-11-08 22:49:03,301 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:04,210 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:49:05,371 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:10,099 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:15,052 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:20,179 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:25,153 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:30,110 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:35,104 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:40,158 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:45,122 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:50,156 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:49:55,225 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:00,174 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:04,248 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:50:06,192 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:10,249 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:15,204 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:20,255 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:25,170 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:30,180 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:35,235 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:40,262 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:45,167 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:50,158 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:50:55,504 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:00,240 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:04,296 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:51:05,164 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:10,170 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:15,272 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:20,244 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:25,232 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:30,193 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:35,278 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:39,352 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BCC/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,356 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring VEN/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,359 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring PAX/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,361 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BSV/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,364 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDS/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,368 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDSB/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,372 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ERD/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,374 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring NPXS/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,376 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STORM/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,379 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring HC/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,381 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring MCO/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,383 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BULL/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,385 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,386 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,388 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,390 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,391 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,393 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,395 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,397 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STRAT/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,399 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,401 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,403 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XZC/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,405 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring LEND/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,407 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BKRW/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,409 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring DAI/USDT from whitelist. Market is not active.
+2021-11-08 22:51:39,412 - VolumePairList - INFO - Pair SHIB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:51:39,414 - VolumePairList - INFO - Searching 30 pairs: ['BTC/USDT', 'ETH/USDT', 'BUSD/USDT', 'DOGE/USDT', 'LRC/USDT', 'BNB/USDT', 'XRP/USDT', 'AVAX/USDT', 'SOL/USDT', 'TRX/USDT', 'DOT/USDT', 'ADA/USDT', 'FTM/USDT', 'OMG/USDT', 'LTC/USDT', 'SAND/USDT', 'VET/USDT', 'ICP/USDT', 'AXS/USDT', 'MANA/USDT', 'LINK/USDT', 'FIL/USDT', 'USDC/USDT', 'MATIC/USDT', 'LUNA/USDT', 'UMA/USDT', 'BAT/USDT', 'POND/USDT', 'SLP/USDT', 'DYDX/USDT']
+2021-11-08 22:51:40,302 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:45,232 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:50,258 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:51:55,211 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:00,220 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:04,333 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:52:05,279 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:10,339 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:15,360 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:20,201 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:25,259 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:30,205 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:35,246 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:40,290 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:45,619 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:50,270 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:52:55,318 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:00,279 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:04,375 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:53:05,239 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:10,464 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:15,300 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:20,355 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:25,301 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:30,348 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:35,308 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:40,323 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:45,286 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:50,262 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:53:55,298 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:54:00,339 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:54:04,418 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:54:05,430 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:54:10,427 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:54:15,536 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:54:20,399 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:54:25,289 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:54:30,324 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:54:35,292 - freqtrade.freqtradesignal - INFO - checking signal
+2021-11-08 22:55:35,656 - freqtrade.loggers - INFO - Verbosity set to 0
+2021-11-08 22:55:35,657 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2021-11-08 22:55:35,662 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2021-11-08 22:55:35,665 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2021-11-08 22:55:35,669 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/trades5.sqlite"
+2021-11-08 22:55:35,672 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 4 ...
+2021-11-08 22:55:35,902 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2021-11-08 22:55:35,903 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2021-11-08 22:55:35,905 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2021-11-08 22:55:35,923 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2021-11-08 22:55:35,927 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2021-11-08 22:55:35,930 - freqtrade.freqtradesignal - INFO - Starting freqtrade 2021.10
+2021-11-08 22:55:36,015 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy NNStraBBRSI from '/freqtrade/user_data/strategies/NNStraBBRSI.py'...
+2021-11-08 22:55:36,018 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2021-11-08 22:55:36,020 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2021-11-08 22:55:36,021 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2021-11-08 22:55:36,023 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2021-11-08 22:55:36,027 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2021-11-08 22:55:36,029 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2021-11-08 22:55:36,031 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 50.
+2021-11-08 22:55:36,033 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2021-11-08 22:55:36,035 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: True.
+2021-11-08 22:55:36,036 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.015}
+2021-11-08 22:55:36,038 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2021-11-08 22:55:36,040 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.99
+2021-11-08 22:55:36,042 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2021-11-08 22:55:36,044 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.028
+2021-11-08 22:55:36,046 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.109
+2021-11-08 22:55:36,049 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2021-11-08 22:55:36,051 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2021-11-08 22:55:36,053 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2021-11-08 22:55:36,055 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2021-11-08 22:55:36,062 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2021-11-08 22:55:36,064 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2021-11-08 22:55:36,066 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 50
+2021-11-08 22:55:36,068 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2021-11-08 22:55:36,069 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2021-11-08 22:55:36,071 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2021-11-08 22:55:36,073 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2021-11-08 22:55:36,075 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: True
+2021-11-08 22:55:36,077 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2021-11-08 22:55:36,081 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_offset: 0.0
+2021-11-08 22:55:36,082 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2021-11-08 22:55:36,088 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2021-11-08 22:55:36,090 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2021-11-08 22:55:36,103 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2021-11-08 22:55:36,105 - freqtrade.exchange.exchange - INFO - Using CCXT 1.59.2
+2021-11-08 22:55:36,106 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-11-08 22:55:36,122 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2021-11-08 22:55:36,137 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2021-11-08 22:55:37,297 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2021-11-08 22:55:37,456 - freqtrade.wallets - INFO - Wallets synced.
+2021-11-08 22:55:37,460 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2021-11-08 22:55:37,801 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2021-11-08 22:55:38,776 - apscheduler.scheduler - INFO - Scheduler started
+2021-11-08 22:55:39,737 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forcesell'], ['forcebuy'], ['trades'], ['delete'], ['performance'], ['stats'], ['daily'], ['count'], ['locks'], ['unlock', 'delete_locks'], ['reload_config', 'reload_conf'], ['show_config', 'show_conf'], ['stopbuy'], ['whitelist'], ['blacklist'], ['logs'], ['edge'], ['help'], ['version']]
+2021-11-08 22:55:39,745 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2021-11-08 22:55:40,249 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2021-11-08 22:55:40,261 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2021-11-08 22:55:40,269 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2021-11-08 22:55:40,271 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - `jwt_secret_key` seems to be default.Others may be able to log into your bot.
+2021-11-08 22:55:40,273 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2021-11-08 22:55:40,294 - uvicorn.error - INFO - Started server process [1]
+2021-11-08 22:55:40,297 - uvicorn.error - INFO - Waiting for application startup.
+2021-11-08 22:55:40,300 - uvicorn.error - INFO - Application startup complete.
+2021-11-08 22:55:40,306 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2021-11-08 22:55:40,333 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2021-11-08 22:55:40,348 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist AgeFilter from '/freqtrade/freqtrade/plugins/pairlist/AgeFilter.py'...
+2021-11-08 22:55:40,359 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist SpreadFilter from '/freqtrade/freqtrade/plugins/pairlist/SpreadFilter.py'...
+2021-11-08 22:55:40,371 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist RangeStabilityFilter from '/freqtrade/freqtrade/plugins/pairlist/rangestabilityfilter.py'...
+2021-11-08 22:55:40,385 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolatilityFilter from '/freqtrade/freqtrade/plugins/pairlist/VolatilityFilter.py'...
+2021-11-08 22:55:40,708 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BCC/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,716 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring VEN/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,724 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring PAX/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,727 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BSV/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,730 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDS/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,732 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDSB/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,734 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ERD/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,735 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring NPXS/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,736 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STORM/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,738 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring HC/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,741 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring MCO/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,746 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BULL/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,748 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,749 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,751 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,755 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,759 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,762 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,764 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,766 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STRAT/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,768 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,771 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,772 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XZC/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,773 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring LEND/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,775 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BKRW/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,778 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring DAI/USDT from whitelist. Market is not active.
+2021-11-08 22:55:40,810 - VolumePairList - INFO - Pair BTC/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,813 - VolumePairList - INFO - Pair ETH/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,817 - VolumePairList - INFO - Pair SHIB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,821 - VolumePairList - INFO - Pair DOGE/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,825 - VolumePairList - INFO - Pair BNB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,827 - VolumePairList - INFO - Pair XRP/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,828 - VolumePairList - INFO - Pair AVAX/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,835 - VolumePairList - INFO - Pair SOL/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,836 - VolumePairList - INFO - Pair DOT/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,838 - VolumePairList - INFO - Pair ADA/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,841 - VolumePairList - INFO - Pair LUNA/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,842 - VolumePairList - INFO - Pair FTT/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:55:40,845 - VolumePairList - INFO - Searching 30 pairs: ['BUSD/USDT', 'LRC/USDT', 'TRX/USDT', 'FTM/USDT', 'OMG/USDT', 'LTC/USDT', 'SAND/USDT', 'VET/USDT', 'ICP/USDT', 'AXS/USDT', 'MANA/USDT', 'LINK/USDT', 'FIL/USDT', 'USDC/USDT', 'MATIC/USDT', 'UMA/USDT', 'BAT/USDT', 'POND/USDT', 'SLP/USDT', 'DYDX/USDT', 'ALGO/USDT', 'BTCST/USDT', 'CHZ/USDT', 'ALICE/USDT', 'SUPER/USDT', 'ONE/USDT', 'EOS/USDT', 'ATOM/USDT', 'ETC/USDT', 'ENJ/USDT']
+2021-11-08 22:55:49,207 - AgeFilter - INFO - Validated 30 pairs.
+2021-11-08 22:55:55,770 - RangeStabilityFilter - INFO - Removed BUSD/USDT from whitelist, because rate of change over 3 days is 0.001, which is below the threshold of 0.1.
+2021-11-08 22:55:55,778 - RangeStabilityFilter - INFO - Removed TRX/USDT from whitelist, because rate of change over 3 days is 0.078, which is below the threshold of 0.1.
+2021-11-08 22:55:55,784 - RangeStabilityFilter - INFO - Removed LTC/USDT from whitelist, because rate of change over 3 days is 0.085, which is below the threshold of 0.1.
+2021-11-08 22:55:55,791 - RangeStabilityFilter - INFO - Removed USDC/USDT from whitelist, because rate of change over 3 days is 0.001, which is below the threshold of 0.1.
+2021-11-08 22:55:55,795 - RangeStabilityFilter - INFO - Removed POND/USDT from whitelist, because rate of change over 3 days is 0.088, which is below the threshold of 0.1.
+2021-11-08 22:55:55,798 - RangeStabilityFilter - INFO - Removed BTCST/USDT from whitelist, because rate of change over 3 days is 0.059, which is below the threshold of 0.1.
+2021-11-08 22:56:01,061 - VolatilityFilter - INFO - Removed LRC/USDT from whitelist, because volatility over 10 days is: 0.610 which is not in the configured range of 0.05-0.5.
+2021-11-08 22:56:01,072 - VolatilityFilter - INFO - Removed SAND/USDT from whitelist, because volatility over 10 days is: 0.670 which is not in the configured range of 0.05-0.5.
+2021-11-08 22:56:01,083 - VolatilityFilter - INFO - Removed MANA/USDT from whitelist, because volatility over 10 days is: 1.039 which is not in the configured range of 0.05-0.5.
+2021-11-08 22:56:01,095 - VolatilityFilter - INFO - Removed CHZ/USDT from whitelist, because volatility over 10 days is: 0.508 which is not in the configured range of 0.05-0.5.
+2021-11-08 22:56:01,135 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2021-11-08 22:56:01,972 - freqtrade.worker - INFO - Changing state to: RUNNING
+2021-11-08 22:56:01,976 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2021-11-08 22:56:02,369 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `50 USDT`\n*Minimum ROI:* `{'0': 0.015}`\n*Stoploss:* `-0.99`\n*Timeframe:* `5m`\n*Strategy:* `NNStraBBRSI`"}
+2021-11-08 22:56:02,764 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 30 volume pairs.'}, {'AgeFilter': 'AgeFilter - Filtering pairs with age less than 14 days'}, {'SpreadFilter': 'SpreadFilter - Filtering pairs with ask/bid diff above 0.5%.'}, {'RangeStabilityFilter': 'RangeStabilityFilter - Filtering pairs with rate of change below 0.1 over the last days.'}, {'VolatilityFilter': 'VolatilityFilter - Filtering pairs with volatility range 0.05-0.5  the last 10 days.'}]"}
+2021-11-08 22:56:16,958 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:57:20,541 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:58:24,060 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.10', state='RUNNING'
+2021-11-08 22:58:48,365 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BCC/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,416 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring VEN/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,420 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring PAX/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,426 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BSV/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,430 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDS/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,432 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring USDSB/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,437 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ERD/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,439 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring NPXS/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,441 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STORM/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,443 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring HC/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,445 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring MCO/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,447 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BULL/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,448 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,450 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,451 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring ETHBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,452 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,453 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring EOSBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,454 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,455 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XRPBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,457 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring STRAT/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,458 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBULL/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,460 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BNBBEAR/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,462 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring XZC/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,464 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring LEND/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,465 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring BKRW/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,467 - freqtrade.plugins.pairlist.IPairList - INFO - Ignoring DAI/USDT from whitelist. Market is not active.
+2021-11-08 22:58:48,495 - VolumePairList - INFO - Pair BTC/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,497 - VolumePairList - INFO - Pair ETH/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,499 - VolumePairList - INFO - Pair SHIB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,501 - VolumePairList - INFO - Pair DOGE/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,504 - VolumePairList - INFO - Pair BNB/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,508 - VolumePairList - INFO - Pair XRP/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,510 - VolumePairList - INFO - Pair AVAX/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,512 - VolumePairList - INFO - Pair SOL/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,514 - VolumePairList - INFO - Pair DOT/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,516 - VolumePairList - INFO - Pair ADA/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,518 - VolumePairList - INFO - Pair LUNA/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,520 - VolumePairList - INFO - Pair FTT/USDT in your blacklist. Removing it from whitelist...
+2021-11-08 22:58:48,522 - VolumePairList - INFO - Searching 30 pairs: ['BUSD/USDT', 'LRC/USDT', 'TRX/USDT', 'FTM/USDT', 'OMG/USDT', 'LTC/USDT', 'SAND/USDT', 'VET/USDT', 'ICP/USDT', 'AXS/USDT', 'MANA/USDT', 'LINK/USDT', 'FIL/USDT', 'USDC/USDT', 'MATIC/USDT', 'UMA/USDT', 'BAT/USDT', 'POND/USDT', 'SLP/USDT', 'DYDX/USDT', 'ALGO/USDT', 'BTCST/USDT', 'CHZ/USDT', 'ALICE/USDT', 'SUPER/USDT', 'ONE/USDT', 'EOS/USDT', 'ATOM/USDT', 'ETC/USDT', 'ENJ/USDT']

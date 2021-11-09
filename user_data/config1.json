@@ -1,0 +1,90 @@
+{
+    "max_open_trades": 3,
+    "stake_currency": "USDT",
+    "stake_amount": 40,
+    "tradable_balance_ratio": 0.99,
+    "available_capital":120,
+    "fiat_display_currency": "USD",
+    "timeframe": "5m",
+    "sell_profit_only": true,
+    "dry_run": false,
+    "db_url": "sqlite:///tradesv3.dryrun.sqlite",
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "buy": 99,
+        "sell": 99
+    },
+    "bid_strategy": {
+        "ask_last_balance": 0.0,
+        "use_order_book": false,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "ask_strategy": {
+        "use_order_book": false,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "binance",
+        "key": "4PFP64jHyox0icwBuHCrGKmwffmY69UDmnKKcnJ7JqflHXQRR2Wc2xOc5SnhoVYL",
+        "secret": "vvA9bTLV4ALpHX6bZXywZlqTJSHyAGL1ngEDZvDoivuaGttwDF38JirvZ4nyRhhU",
+        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 200
+        },
+        "pair_whitelist": [
+            "LUNA/USDT",
+            "ETH/USDT",
+            "FTM/USDT",
+            "DOT/USDT",
+            "SOL/USDT",
+            "ADA/USDT",
+            "XRP/USDT",
+            "BNB/USDT",
+            "MATIC/USDT"
+        ],
+        "pair_blacklist": [
+            "SHIB/USDT"
+        ]
+    },
+    "pairlists": [
+      { "method": "StaticPairList"}
+    ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 7,
+        "allowed_risk": 0.01,
+
+        "minimum_winrate": 0.60,
+        "minimum_expectancy": 0.20,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "2030854341:AAG1NtmICrERtYIjmo2W5d8n5pdPuxQ6tOk",
+        "chat_id": "2026655345"
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "jwt_secret_key": "somethingrandom",
+        "CORS_origins": [],
+        "username": "freqtrader",
+        "password": "lbger433a"
+    },
+    "bot_name": "freqtrade1",
+    "initial_state": "running",
+    "forcebuy_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}

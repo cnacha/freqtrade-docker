@@ -1,0 +1,26 @@
+{
+  "strategy_name": "AdxSmas",
+  "params": {
+    "roi": {
+      "0": 0.010
+    },
+    "stoploss": {
+      "stoploss": -0.99
+    },
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": null,
+      "trailing_stop_positive_offset": 0.0,
+      "trailing_only_offset_is_reached": false
+    },
+    "buy": {
+      "buy_adx": 25
+    },
+    "sell": {
+      "sell_adx": 25
+    },
+    "protection": {}
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2021-10-09 09:59:39.794624+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "strategy_name": "GodStraQuick",
+  "params": {
+    "stoploss": {
+      "stoploss": -0.99
+    },
+    "buy": {
+      "buy_crossed_indicator0": "AVGPRICE-50",
+      "buy_crossed_indicator1": "KAMA-55",
+      "buy_crossed_indicator2": "BBANDS-1-50",
+      "buy_indicator0": "LINEARREG_INTERCEPT-55",
+      "buy_indicator1": "MINUS_DI-50",
+      "buy_indicator2": "STOCHRSI-1-12",
+      "buy_operator0": "D",
+      "buy_operator1": "/>R",
+      "buy_operator2": "CB",
+      "buy_real_num0": 0.4,
+      "buy_real_num1": 0.7,
+      "buy_real_num2": 0.6
+    },
+    "sell": {
+      "sell_crossed_indicator0": "ROCR-50",
+      "sell_crossed_indicator1": "VAR-110",
+      "sell_crossed_indicator2": "BBANDS-0-12",
+      "sell_indicator0": "CDLINNECK-55",
+      "sell_indicator1": "CDLTASUKIGAP-6",
+      "sell_indicator2": "CDLRICKSHAWMAN-6",
+      "sell_operator0": "<R",
+      "sell_operator1": "/<R",
+      "sell_operator2": "CUT",
+      "sell_real_num0": 0.6,
+      "sell_real_num1": 0.9,
+      "sell_real_num2": 0.0
+    },
+    "protection": {},
+    "roi": {
+      "0": 0.015
+    },
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": 0.077,
+      "trailing_stop_positive_offset": 0.153,
+      "trailing_only_offset_is_reached": false
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2021-09-19 12:23:17.417519+00:00"
+}
